@@ -1,0 +1,28 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Museo Sans Cyrl-500";
+  src: url("https://anima-uploads.s3.amazonaws.com/5c5417d4c6eb34000d21b406/MuseoSansCyrl_500.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Museo Sans Cyrl-700";
+  src: url("https://anima-uploads.s3.amazonaws.com/5a97efaeabc796000de82532/MuseoSansCyrl_700.otf") format("opentype");
+}
