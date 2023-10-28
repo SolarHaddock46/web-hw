@@ -1,34 +1,40 @@
-.frame {
-  display: inline-flex;
-  flex-direction: column;
+aside {
+  float: right
+}
+
+
+.frame { 
+  display: flex;                 
+  flex-direction: column;  
   align-items: center;
   gap: 64px;
   position: relative;
 }
 
 .frame .module-header {
-  display: flex;
-  width: 1440px;
-  align-items: center;
-  justify-content: space-between;
+  display: flex;  
+  width: 100%;                           
+  align-items: center; 
+  justify-content: space-between; 
   padding: 20px 40px;
-  position: relative;
-  flex: 0 0 auto;
-  background-color: #ffffff;
+  position: relative; 
+  flex: 0 0 auto;   
+  background-color: #ffffff;  
   box-shadow: 0px 1.13px 4.29px #855e9807, 0px 2.87px 10.86px #855e980a, 0px 5.85px 22.15px #855e980d,
     0px 5.85px 22.15px #855e980d;
 }
 
 .frame .div {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
+  flex-grow: 1;              
   gap: 64px;
   position: relative;
-  flex: 0 0 auto;
 }
 
-.frame .image {
+
+.frame .logo {
   position: relative;
   width: 96px;
   height: 47px;
@@ -42,7 +48,7 @@
   flex: 0 0 auto;
 }
 
-.frame .button-secondary {
+.frame .button-active {
   padding: 8px 16px;
   background-color: var(--ffffff-white-main);
   border: 1px solid;
@@ -114,7 +120,7 @@
   flex: 0 0 auto;
 }
 
-.frame .div-6 {
+.frame .avatar-load {
   display: inline-flex;
   align-items: flex-end;
   gap: 16px;
@@ -122,7 +128,7 @@
   flex: 0 0 auto;
 }
 
-.frame .text-wrapper-3 {
+.frame .progress-main {
   position: relative;
   width: fit-content;
   margin-top: -1px;
@@ -145,7 +151,7 @@
   flex: 0 0 auto;
 }
 
-.frame .text-wrapper-4 {
+.frame .progress-secondary {
   position: relative;
   width: fit-content;
   margin-top: -1px;
@@ -196,7 +202,7 @@
   align-self: stretch;
 }
 
-.frame .div-10 {
+.frame .avatar-load {
   display: flex;
   flex-direction: column;
   height: 200px;
@@ -204,6 +210,8 @@
   justify-content: center;
   gap: 20px;
   padding: 40px 32px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   position: relative;
   align-self: stretch;
   width: 100%;
@@ -245,8 +253,10 @@
   flex: 0 0 auto;
   background-color: var(--x7953c3-purple-main);
   border-radius: 8px;
-  cursor:pointer;
+  cursor: pointer;
+  animation: none;
 }
+
 
 .frame .text-wrapper-6 {
   width: fit-content;
@@ -275,7 +285,7 @@
   font-style: var(--small-font-style);
 }
 
-.frame .div-12 {
+.frame .user-form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -308,7 +318,7 @@
   border-radius: 8px;
 }
 
-.frame .text-wrapper-7 {
+.frame .user-text {
   position: relative;
   align-self: stretch;
   margin-top: -1px;
@@ -334,7 +344,7 @@
   background-color: #f4f4f6;
 }
 
-.frame .text-wrapper-8 {
+.frame .textarea-label {
   position: relative;
   width: fit-content;
   margin-top: -11px;
@@ -348,7 +358,7 @@
   font-style: var(--small-font-style);
 }
 
-.frame .div-14 {
+.frame .radio-form {
   display: inline-flex;
   align-items: center;
   gap: 16px;
@@ -363,7 +373,7 @@
   height: 16px;
 }
 
-.frame .element-2 {
+.frame .radiobutton {
   position: relative;
   width: fit-content;
   margin-top: -1px;
@@ -469,7 +479,7 @@
   font-weight: 400;
 }
 
-.frame .div-16 {
+/* .frame .preview-block {
   display: flex;
   flex-direction: column;
   width: 614px;
@@ -477,20 +487,21 @@
   justify-content: center;
   gap: 24px;
   position: relative;
-}
+} */
 
-.frame .div-wrapper-2 {
+/* .frame .preview-block {
   display: inline-flex;
   align-items: flex-start;
   gap: 8px;
   padding: 0px 0px 0px 16px;
   position: relative;
   flex: 0 0 auto;
-}
+} */
 
-.frame .text-wrapper-11 {
+.frame .preview-heading {
   width: fit-content;
   margin-top: -1px;
+  margin-bottom: 30px;
   font-family: var(--small-font-family);
   color: var(--x5d5b66-secondary-black);
   font-size: var(--small-font-size);
@@ -516,7 +527,7 @@
   box-shadow: var(--default-multiple-shadows);
 }
 
-.frame .div-17 {
+.frame .preview-left-wrapper {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -525,7 +536,7 @@
   flex: 0 0 auto;
 }
 
-.frame .view-2 {
+.frame .profile-pic {
   position: relative;
   width: 140px;
   height: 140px;
@@ -562,7 +573,7 @@
   font-weight: 400;
 }
 
-.frame .div-18 {
+.frame .preview-right-wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -584,7 +595,7 @@
   flex: 0 0 auto;
 }
 
-.frame .div-20 {
+.frame .userdata-wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -595,7 +606,7 @@
   flex: 0 0 auto;
 }
 
-.frame .div-wrapper-3 {
+.frame .name-wrapper {
   display: flex;
   align-items: center;
   position: relative;
@@ -616,7 +627,7 @@
   font-weight: 400;
 }
 
-.frame .div-21 {
+.frame .secondary-userdata-wrapper {
   display: flex;
   align-items: center;
   gap: 4px;
@@ -679,7 +690,7 @@
   flex: 0 0 auto;
 }
 
-.frame .div-22 {
+.frame .bio-wrapper {
   display: flex;
   align-items: flex-start;
   gap: 16px;
@@ -689,7 +700,7 @@
   flex: 0 0 auto;
 }
 
-.frame .text-wrapper-15 {
+.frame .bio {
   flex: 1;
   margin-top: -1px;
   font-family: "Museo Sans Cyrl-500", Helvetica;
@@ -875,7 +886,7 @@
   font-style: var(--h3-font-style);
 }
 
-.frame .button-primary-wrapper {
+.frame .continue-wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -887,7 +898,7 @@
   cursor:pointer;
 }
 
-.frame .button-primary-2 {
+.frame .button-inactive {
   padding: 12px 64px;
   background-color: var(--x7953c3-purple-main);
   opacity: 0.2;
@@ -915,7 +926,8 @@
   font-style: var(--p-bold-font-style);
 }
 
-.simple-input{
+.text-area{
+  flex-grow: 1;          
   background: none;
   border: none;
 }
