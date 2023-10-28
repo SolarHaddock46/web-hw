@@ -5,7 +5,7 @@ const previewAge = document.querySelector("#preview-age");
 fieldDate.addEventListener('input', function() {
     const inputDate = new Date(fieldDate.value); 
     var ageDifMs = Date.now() - inputDate;
-    var ageDate = new Date(ageDifMs); // miliseconds from epoch
+    var ageDate = new Date(ageDifMs);
     var age = Math.abs(ageDate.getUTCFullYear() - 1970);
 
     if (!isNaN(age) || age <= 0) {

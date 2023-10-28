@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/globals.css" />
     <link rel="stylesheet" href="css/styleguide.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   </head>
   <body>
     <section class="frame">
@@ -45,12 +47,15 @@
             </div>
             <form class="radio-form" id="gender-form">
               <input type="radio" id="male" name="option" value="male"><p class="user-text">Парень</p><br>
-              <!-- <label class="radiobutton" for="male">Парень</label><br> -->
               <input type="radio" id="female" name="option" value="female"><p class="user-text">Девушка</p><br>
-              <!-- <label class="radiobutton" for="female">Девушка</label><br> -->
             </form>
             <div class="input-text-2">
               <input class=" user-text text-area" placeholder="MM/DD/YYYY" id="birthdate"/>
+              <script>
+                flatpickr("#birthdate", {
+                  dateFormat: "m/d/Y" 
+                });
+              </script>              
               <script src="js/date_format.js"></script>
               <div>
                 <span class="textarea-label">Дата рождения</span>
